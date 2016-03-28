@@ -27,135 +27,239 @@ Variables Overview:  The derived variables were obtained in the untidy data as d
 2. These two signals were separated into body and gravity acceleration signals (tBodyAcc-XYZ, tGravityAcc-XYZ) using a low pass filter. The mean and standard deviation functions were applied to these variables in the untidy dataset (for example: tBodyAcc-mean()-X and tGravityAcc-std()-Y). The 18 associated tidy data variables are: 
       
       a. timebodyaccelerationmeanx,    timebodyaccelerationstandarddeviationx
+
       b. timebodyaccelerationmeany,    timebodyaccelerationstandarddeviationy
+      
       c. timebodyaccelerationmeanz,    timebodyaccelerationstandarddeviationz
+      
       d. timegravityaccelerationmeanx, timegravityaccelerationstandarddeviationx
+      
       e. timegravityaccelerationmeany, timegravityaccelerationstandarddeviationy
+      
       f. timegravityaccelerationmeanz, timegravityaccelerationstandarddeviationz
+      
       g. timebodygyromeanx,            timebodygyrostandarddeviationx
+      
       h. timebodygyromeany,            timebodygyrostandarddeviationy
+      
       i. timebodygyromeanz,            timebodygyrostandarddeviationz
       
 3. The body linear acceleration and angular velocity were derived as "Jerk" signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). The mean and standard deviation functions were applied to these variables in the untidy dataset (for example: tBodyAccJerk-mean()-X and tBodyGyroJerk-std()-Y). The 12 associated tidy data variables are:
       
       a. timebodyaccelerationjerkmeanx, timebodyaccelerationjerkstandarddeviationx
+
       b. timebodyaccelerationjerkmeany, timebodyaccelerationjerkstandarddeviationy
+      
       c. timebodyaccelerationjerkmeanz, timebodyaccelerationjerkstandarddeviationz
+      
       d. timebodygyrojerkmeanx,         timebodygyrojerkstandarddeviationx
+      
       e. timebodygyrojerkmeany,         timebodygyrojerkstandarddeviationy
+      
       f. timebodygyrojerkmeanz,         timebodygyrojerkstandarddeviationz
       
 4. The magnitude (way of combining x,y,z vectors) was calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). The mean and standard deviation functions were applied to these variables in the untidy dataset (for example: tBodyAccMag-mean(), tGravityAccMag-mean(), tBodyAccJerkMag-mean(), tBodyGyroMag-mean() ).The 10 associated tidy data variables are:
       
       a. timebodyaccelerationmagnitudemean,      timebodyaccelerationmagnitudestandarddeviation
+
       b. timegravityaccelerationmagnitudemean,   timegravityaccelerationmagnitudestandarddeviation
+      
       c. timebodyaccelerationjerkmagnitudemean,  timebodyaccelerationjerkmagnitudestandarddeviation
-      d. timebodygyromagnitudemean,              timebodygyromagnitudestandarddeviation                    
+      
+      d. timebodygyromagnitudemean,              timebodygyromagnitudestandarddeviation 
+      
       e. timebodygyrojerkmagnitudemean,          timebodygyrojerkmagnitudestandarddeviation
       
 5. A Fast Fourier Transform (FFT) was applied to some signals. The mean and standard deviation functions were applied to these variables in the untidy dataset (for example: fBodyAcc-mean()-X, fBodyGyro-std()-Y, fBodyAccMag-mean(), fBodyBodyAccJerkMag-mean() and fBodyBodyGyroJerkMag-std(), where f indicates that these are frequency domain signals.)  These were included because the mean was applied after the derived variable was calculated.  The 26 associated tidy data variables are:
       
       a. frequencybodyaccelerationmeanx,                 frequencybodyaccelerationstandarddeviaionx
+
       b. frequencybodyaccelerationmeany,                 frequencybodyaccelerationstandarddeviaiony
+      
       c. frequencybodyaccelerationmeanz,                 frequencybodyaccelerationstandarddeviaionz
+      
       d. frequencybodyaccelerationjerkmeanx,             frequencybodyaccelerationjerkstandarddeviationx
+      
       e. frequencybodyaccelerationjerkmeany,             frequencybodyaccelerationjerkstandarddeviationy
+      
       f. frequencybodyaccelerationjerkmeanz,             frequencybodyaccelerationjerkstandarddeviationz
+      
       g. frequencybodygyromeanx,                         frequencybodygyrostandarddeviationx
+      
       h. frequencybodygyromeany,                         frequencybodygyrostandarddeviationy
+      
       i. frequencybodygyromeanz,                         frequencybodygyrostandarddeviationz
+      
       j. frequencybodyaccelerationmagnitudemean,         frequencybodyaccelerationmagnitudestandarddeviation
+      
       k. frequencybodybodyaccelerationjerkmagnitudemean, frequencybodybodyaccelerationjerkmagnitudestandarddeviation
-      l. frequencybodybodygyromagnitudemean,             frequencybodybodygyromagnitudestandarddeviation            
+      
+      l. frequencybodybodygyromagnitudemean,             frequencybodybodygyromagnitudestandarddeviation 
+      
       m. frequencybodybodygyrojerkmagnitudemean,         frequencybodybodygyrojerkmagnitudestandarddeviation
       
 Variables:  (See description of how each variable was created and which were selected from untidy dataset above.)
+
 1. subject - the volunteer number [1 to 30]
+
 2. activity - one of 6 [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING]
       
+
 3. timebodyaccelerationmeanx
+
 4. timebodyaccelerationmeany
+
 5. timebodyaccelerationmeanz
       
+
 6. timebodyaccelerationstandarddeviationx
+
 7. timebodyaccelerationstandarddeviationy
+
 8. timebodyaccelerationstandarddeviationz
       
+
 9. timegravityaccelerationmeanx
+
 10. timegravityaccelerationmeany
+
 11. timegravityaccelerationmeanz
+
       
 12. timegravityaccelerationstandarddeviationx
+
 13. timegravityaccelerationstandarddeviationy
+
 14. timegravityaccelerationstandarddeviationz
+
       
 15. timebodygyromeanx
+
 16. timebodygyromeany
+
 17. timebodygyromeanz
+
       
 18. timebodygyrostandarddeviationx
+
 19. timebodygyrostandarddeviationy
+
 20. timebodygyrostandarddeviationz
+
       
 21. timebodyaccelerationjerkmeanx
+
 22. timebodyaccelerationjerkmeany
+
 23. timebodyaccelerationjerkmeanz
+
       
 24. timebodyaccelerationjerkstandarddeviationx
+
 25. timebodyaccelerationjerkstandarddeviationy
+
 26. timebodyaccelerationjerkstandarddeviationz
+
       
 27. timebodygyrojerkmeanx
+
 28. timebodygyrojerkmeany
+
 29. timebodygyrojerkmeanz
+
       
 30. timebodygyrojerkstandarddeviationx
+
 31. timebodygyrojerkstandarddeviationy
+
 32. timebodygyrojerkstandarddeviationz
+
       
 33. timebodyaccelerationmagnitudemean
+
 34. timebodyaccelerationmagnitudestandarddeviation
+
 35. timegravityaccelerationmagnitudemean
+
 36. timegravityaccelerationmagnitudestandarddeviation
+
 37. timebodyaccelerationjerkmagnitudemean
+
 38. timebodyaccelerationjerkmagnitudestandarddeviation
+
 39. timebodygyromagnitudemean
+
 40. timebodygyromagnitudestandarddeviation                    
+
 41. timebodygyrojerkmagnitudemean
+
 42. timebodygyrojerkmagnitudestandarddeviation
       
+
 43. frequencybodyaccelerationmeanx
+
 44. frequencybodyaccelerationmeany                 
+
 45. frequencybodyaccelerationmeanz
+
       
+
 46. frequencybodyaccelerationstandarddeviaionx
+
 47. frequencybodyaccelerationstandarddeviaiony
+
 48. frequencybodyaccelerationstandarddeviaionz
+
       
+
 49. frequencybodyaccelerationjerkmeanx             
+
 50. frequencybodyaccelerationjerkmeany             
+
 51. frequencybodyaccelerationjerkmeanz
+
       
+
 52. frequencybodyaccelerationjerkstandarddeviationx
+
 53. frequencybodyaccelerationjerkstandarddeviationy
+
 54. frequencybodyaccelerationjerkstandarddeviationz
+
       
+
 55. frequencybodygyromeanx                         
+
 56. frequencybodygyromeany                         
+
 57. frequencybodygyromeanz                         
+
       
+
 58. frequencybodygyrostandarddeviationx
+
 59. frequencybodygyrostandarddeviationy
+
 60. frequencybodygyrostandarddeviationz
+
       
+
 61. frequencybodyaccelerationmagnitudemean         
+
 62. frequencybodyaccelerationmagnitudestandarddeviation
+
 63. frequencybodybodyaccelerationjerkmagnitudemean
+
 64. frequencybodybodyaccelerationjerkmagnitudestandarddeviation
+
 65. frequencybodybodygyromagnitudemean             
+
 66. frequencybodybodygyromagnitudestandarddeviation            
+
 67. frequencybodybodygyrojerkmagnitudemean         
+
 68. frequencybodybodygyrojerkmagnitudestandarddeviation
+
       
 The Data:  The tidy dataset data consists of 180 rows (30 subjects doing 6 activities) versus 66 columns that represent the average of each variable.  For example, the average (0.2789176) of the 53 untidy dataset entries where subject = 1 and activity = STANDING for the tBodyAcc-mean()-X variable (tidy dataset name timebodyaccelerationmeanx) is presented in the tidy dataset in the row representing subject 1 and STANDING activity under the column timebodyaccelerationmeanx.
 
