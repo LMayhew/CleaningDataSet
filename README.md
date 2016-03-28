@@ -5,6 +5,8 @@ Overview:  The untidy data was obtained from the Human Activity Recognition Usin
 
 Script: run_analysis.R
 
+Resulting Tidy Data Set: tidyDataSet.txt
+
 Script Functionality:
 
 1. Downloads, unzips, and loads the necessary data
