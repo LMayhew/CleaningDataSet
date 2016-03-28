@@ -7,6 +7,8 @@ Script: run_analysis.R
 
 Resulting Tidy Data Set: tidyDataSet.txt
 
+Script Assumes:  Script is run from the same directory containing the top file level of the downloaded data "UCI HAR Dataset".
+
 Script Functionality:
 
 1. Loads the necessary data, creates the test and train data.frames.
@@ -41,4 +43,4 @@ Script Functionality:
       
       f. For example, the untidy variable tBodyAccMag-std(), referring to time-domain measurement of body acceleration magnitude where standard deviation function was applied becomes timebodyaccelerationmagnitudestandarddeviation.
                   
-6. From the data set in step5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  The data set in step 5 was grouped by subject and activity, then summarized as an average for all variables.  In other words, the 66 tidy mean and standard deviation variables were averaged for each combination of subject (30 possible) and activity (6 possible) to obtain a data set with 30x6 = 180 rows, two columns indicating subject and activity, and 66 columns indicating the 66 measured variables. 
+6. From the data set in step5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  The data set in step 5 was grouped by subject and activity, then summarized as an average for all variables.  In other words, the 66 tidy mean and standard deviation variables were averaged for each combination of subject (30 possible) and activity (6 possible) to obtain a data set with 30x6 = 180 rows, two columns indicating subject and activity, and 66 columns indicating the 66 measured variables. The resulting tidy data set is named tidyDataSet.
